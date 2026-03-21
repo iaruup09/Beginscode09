@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Piku Chat</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- LOGIN PAGE -->
+
+<div id="loginPage" class="page">
+
+<h1 class="logo">Piku Chat</h1>
+
+<input id="loginUsername" placeholder="Username">
+
+<input id="loginPassword" type="password" placeholder="Password">
+
+<button id="loginBtn">Login</button>
+
+<p class="link" id="goSignup">Create Account</p>
+
+</div>
+
+
+
+<!-- SIGNUP PAGE -->
+
+<div id="signupPage" class="page hidden">
+
+<h2>Create Account</h2>
+
+<input id="signupUsername" placeholder="Username">
+
+<input id="signupPassword" type="password" placeholder="Password">
+
+<button id="signupBtn">Continue</button>
+
+<p class="link" id="backLogin">Back to Login</p>
+
+</div>
+
+
+
+<!-- PROFILE SETUP -->
+
+<div id="setupPage" class="page hidden">
+
+<h2>Profile Setup</h2>
+
+<input id="nameInput" placeholder="Your Name">
+
+<select id="genderInput">
+<option value="">Select Gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+
+<textarea id="bioInput" placeholder="Your Bio"></textarea>
+
+<button id="finishSetup">Continue</button>
+
+</div>
+
+
+
+<!-- MAIN APP -->
+
+<div id="appPage" class="hidden">
+
+
+<!-- TOP BAR -->
+
+<div class="topBar">
+
+<div class="menuBtn" id="menuBtn">☰</div>
+
+<div class="title">Messages</div>
+
+</div>
+
+
+
+<!-- SIDE MENU -->
+
+<div id="menu">
+
+<div class="menuProfile">
+
+<div id="menuAvatar" class="avatar"></div>
+
+<div id="menuName"></div>
+
+<div id="menuBio"></div>
+
+</div>
+
+<button id="logoutBtn">Logout</button>
+
+</div>
+
+
+
+<!-- SEARCH BAR -->
+
+<div class="searchArea">
+
+<input id="searchInput" placeholder="Search">
+
+</div>
+
+
+
+<!-- CHAT LIST -->
+
+<div id="chatList">
+
+<div class="chatItem" id="chat1">
+
+<div class="chatAvatar"></div>
+
+<div class="chatInfo">
+
+<div class="chatName">Alex</div>
+
+<div class="chatPreview">Hello 👋</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CHAT SCREEN -->
+
+<div id="chatScreen" class="hidden">
+
+<div class="chatTop">
+
+<button id="backBtn">←</button>
+
+<div class="chatUser">
+
+<div class="onlineDot"></div>
+
+<span id="chatUserName">Alex</span>
+
+</div>
+
+</div>
+
+
+
+<div id="messages"></div>
+
+
+
+<div class="messageInput">
+
+<input id="msgInput" placeholder="iMessage">
+
+<button id="sendBtn">Send</button>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- PASSCODE SCREEN -->
+
+<div id="passcodeScreen" class="page hidden">
+
+<h2>Enter Passcode</h2>
+
+<div id="passDots"></div>
+
+<div class="keypad">
+
+<button>1</button>
+<button>2</button>
+<button>3</button>
+
+<button>4</button>
+<button>5</button>
+<button>6</button>
+
+<button>7</button>
+<button>8</button>
+<button>9</button>
+
+
+<button>0</button>
+<button><samp></samp></button>
+<button id="passDelete">⌫</button>
+
+</div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
